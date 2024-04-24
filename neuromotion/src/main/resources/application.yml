@@ -1,0 +1,14 @@
+spring:
+  aplication:
+    name: neuromation
+  datasource:
+    url: jdbc:mysql://localhost:3306/user-db
+    username: root
+    password: AulaMatriz123
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect

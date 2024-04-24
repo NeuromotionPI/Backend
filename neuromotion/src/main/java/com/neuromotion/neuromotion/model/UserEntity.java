@@ -1,5 +1,6 @@
 package com.neuromotion.neuromotion.model;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -15,27 +16,21 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user")
+@Table(name="user")
 @Entity
 public class UserEntity {
 
     @Id
+    @Column(name ="id_usuario")
     private String id;
 
-    private String document;
+    private String nombre;
 
-    @Column(name = "type_document")
-    private String typeDocument;
+    private String apellido;
 
-    private String name;
+    private String edad;
 
-    private String lastname;
-
-    @Column(name = "phone_number")
-    private String phoneNumber;
-
-    @Column(name = "creat_at")
-    private LocalDateTime creatAt;
+    private String correo;
 
     //is_active
 
